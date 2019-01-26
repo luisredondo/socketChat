@@ -56,3 +56,10 @@ socket.on('mensajePrivado', function(mensaje) {
     console.log('Mensaje Privado:', mensaje);
 
 });
+
+// Buscar usuarios
+socket.on('buscarUsuario', function(personas) {
+
+    buscarUsuarios(personas);
+
+});

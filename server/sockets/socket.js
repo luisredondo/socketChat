@@ -59,5 +59,11 @@ io.on('connection', (client) => {
 
     });
 
+    client.emit('buscarUsuario', (data) => {
+
+        console.log(data);
+
+    });
+
 
 });

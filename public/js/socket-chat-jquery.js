@@ -9,7 +9,19 @@ var divUsuarios = $('#divUsuarios');
 var formEnviar = $('#formEnviar');
 var txtMensaje = $('#txtMensaje');
 var divChatbox = $('#divChatbox');
+var searchContacts = $('#searchContacts');
+var chatTitle = $('.box-title');
 
+// Buscar un usuario de acuerdo a su username
+function buscarUsuarios(personas) {
+
+    let personaEncontrada = personas.filter(persona => persona.nombre === searchContacts.value);
+
+    personas.filter((persona) => persona.nombre === searchContacts.value);
+
+    console.log(personaEncontrada);
+
+}
 
 // Funciones para renderizar usuarios
 function renderizarUsuarios(personas) { // [{},{},{}]
